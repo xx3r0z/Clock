@@ -9,8 +9,8 @@ const seconds = document.querySelector('#seconds');
 const amPm = document.querySelector('#amPm')
 
 // Call all functions
+chngeBackground();
 setInterval(callAllfunctions, 1000)
-// callAllfunctions()
 
 function callAllfunctions (){
     getAllDates();
@@ -94,11 +94,11 @@ if (totalTime > 12) {
 function chngeBackground (){
     let recentTime = new Date().getHours();
     if (recentTime >= 19 || recentTime < 6){
-        mainContainer.classList.toggle('nightTime')
+        mainContainer.classList.toggle('nightTime');
     } else if (recentTime >= 18 || recentTime === 6) {
-        mainContainer.classList.toggle('eveningTime')
+        mainContainer.classList.toggle('eveningTime');
     } else {
-        mainContainer.classList.toggle('dayTime')
+        mainContainer.classList.toggle('dayTime');
     }
 }
 
