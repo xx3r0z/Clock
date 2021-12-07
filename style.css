@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#mainContainer {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+#timeContainer {
+    width: 20rem;
+    height: 30rem;
+    background-color: #7f5a83;
+    background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    opacity: 0.5;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#todayDay {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+#todayDate {
+    font-family: 'Lato', sans-serif;
+    font-size: 0.7rem;
+    color: white;
+    margin: 1rem 0rem;
+    font-weight: 300;
+}
+
+#time {
+    font-family: 'Lato', sans-serif;
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
+}
+
+#seconds {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+}
+
+#amPm {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 0.5rem;
+}
+
+.dayTime {
+    background-image: url(images/dayImageDesktop.jpg);
+}
+
+.eveningTime {
+    background-image: url(images/sunupSundownDesktop.jpg);
+}
+
+.nightTime {
+    background-image: url(images/nightImageDesktop.jpg);
+}
+
+span h6 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 0.5rem;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    #mainContainer {
+        justify-content: center;
+    }
+
+    .dayTime {
+        background-image: url(images/dayImageMobile.jpg);
+    }
+    
+    .eveningTime {
+        background-image: url(images/sunupSundownMobile.jpg);
+    }
+    
+    .nightTime {
+        background-image: url(images/nightImageMobile.jpg);
+    }
+}
