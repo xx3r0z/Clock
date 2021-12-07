@@ -102,5 +102,3 @@ function chngeBackground (){
     }
 }
 
-chngeBackground();
-
